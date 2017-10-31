@@ -1,7 +1,7 @@
 using System;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace DojoAspNetCore.Authentication
+namespace DojoAspNetCore.Auth
 {
     public sealed class JwtToken
     {
