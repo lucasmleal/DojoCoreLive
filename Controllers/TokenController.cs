@@ -12,6 +12,7 @@ namespace DojoLive.Controllers
 {
     [Route("token")]
     [AllowAnonymous]
+    [Produces("application/json")]
     public class TokenController : Controller
     {
         [HttpPost]

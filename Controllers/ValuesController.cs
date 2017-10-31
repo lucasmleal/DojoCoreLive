@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DojoLive.Controllers
 {
     [Authorize]
+    [Produces("application/json")]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
@@ -15,7 +16,7 @@ namespace DojoLive.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", User.Claims.First(c => c.Type == "nome").Value };
         }
 
         // GET api/values/5

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace DojoLive
 {
@@ -42,6 +43,15 @@ namespace DojoLive
                         options.TokenValidationParameters = tokenValidationParameters;
                     }
                 );
+                
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info {Title = "Dojo ASP.NET Core 2.0", Version = "v1"});
+            });
+            // services.ConfigureSwaggerGen(options =>
+            // {
+            //     options.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
+            // });
 
             services.AddMvc();
         }
@@ -55,6 +65,9 @@ namespace DojoLive
             }
 
             app.UseAuthentication();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("v1/swagger.json", "Dojo ASP.NET Core 2.0"); });
 
             app.UseMvc();
         }
