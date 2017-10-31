@@ -1,0 +1,10 @@
+C:\CWI\Projetos\DojoLive\bin\Debug\netcoreapp2.0\DojoLive.deps.json
+C:\CWI\Projetos\DojoLive\bin\Debug\netcoreapp2.0\DojoLive.runtimeconfig.json
+C:\CWI\Projetos\DojoLive\bin\Debug\netcoreapp2.0\DojoLive.runtimeconfig.dev.json
+C:\CWI\Projetos\DojoLive\bin\Debug\netcoreapp2.0\DojoLive.dll
+C:\CWI\Projetos\DojoLive\bin\Debug\netcoreapp2.0\DojoLive.pdb
+C:\CWI\Projetos\DojoLive\obj\Debug\netcoreapp2.0\DojoLive.csproj.CoreCompileInputs.cache
+C:\CWI\Projetos\DojoLive\obj\Debug\netcoreapp2.0\DojoLive.AssemblyInfoInputs.cache
+C:\CWI\Projetos\DojoLive\obj\Debug\netcoreapp2.0\DojoLive.AssemblyInfo.cs
+C:\CWI\Projetos\DojoLive\obj\Debug\netcoreapp2.0\DojoLive.dll
+C:\CWI\Projetos\DojoLive\obj\Debug\netcoreapp2.0\DojoLive.pdb
