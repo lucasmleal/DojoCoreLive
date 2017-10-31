@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DojoLive.Auth;
+using DojoLive.Swagger;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,10 +49,10 @@ namespace DojoLive
             {
                 c.SwaggerDoc("v1", new Info {Title = "Dojo ASP.NET Core 2.0", Version = "v1"});
             });
-            // services.ConfigureSwaggerGen(options =>
-            // {
-            //     options.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
-            // });
+            services.ConfigureSwaggerGen(options =>
+            {
+                options.OperationFilter<AuthorizationHeaderParameterOperationFilter>();
+            });
 
             services.AddMvc();
         }

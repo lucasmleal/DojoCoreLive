@@ -12654,11 +12654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\CWI\\Projetos\\DojoLive\\DojoLive.csproj",
+      "projectUniqueName": "C:\\CWI\\Projetos\\DojoLive\\DojoLive.csproj",
       "projectName": "DojoLive",
-      "projectPath": "c:\\CWI\\Projetos\\DojoLive\\DojoLive.csproj",
+      "projectPath": "C:\\CWI\\Projetos\\DojoLive\\DojoLive.csproj",
       "packagesPath": "C:\\Users\\lucas.leal\\.nuget\\packages\\",
-      "outputPath": "c:\\CWI\\Projetos\\DojoLive\\obj\\",
+      "outputPath": "C:\\CWI\\Projetos\\DojoLive\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
